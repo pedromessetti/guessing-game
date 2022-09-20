@@ -2,9 +2,12 @@ const startGame = document.getElementById('start')
 const legenda = document.querySelector('.menor-maior')
 const titulo = document.querySelector('.title')
 
-function comecou() {
+jogar()
+
+//Inicia o jogo ao clicar no botão "Jogar"
+function jogar() {
     document.body.addEventListener('click', e => {  
-        if(e.target.id == 'comecar') { 
+        if(e.target.id == 'jogar') { 
             titulo.innerHTML = "Jogo da Adivinhação"
             startGame.style.display = "none"
             legenda.style.display = "block"
@@ -14,8 +17,7 @@ function comecou() {
     })
 }
 
-comecou()
-
+//Capta a dificuldade selecionada
 function selecionaDificuldade() {
     const select = document.querySelector('select')
     const option = select.children[select.selectedIndex]
@@ -24,20 +26,21 @@ function selecionaDificuldade() {
 
 function nivelDificuldade(dificuldade) {
     if(dificuldade == "Fácil") {
-        return 20
+        return 20 //Número de tentativas
     }
 
     if(dificuldade == "Médio") {
-        return 15
+        return 15 //Número de tentativas
     }
 
     if(dificuldade == "Difícil") {
-        return 10
+        return 10 //Número de tentativas
     }
 }
 
 const elementoChute = document.getElementById('chute')
 
+//Reconhecimento de voz
 function reconhecimentoVoz() {
     window.SpeechRecognition = window.SpeechRecognition || webkitSpeechRecognition;
 
@@ -48,12 +51,14 @@ function reconhecimentoVoz() {
 
     recognition.addEventListener('result', onSpeak)
 
+    //Transcreve o que foi falado
     function onSpeak(e) {
         chute = e.results[0][0].transcript
         exibeChute(chute)
         verificaChute(chute)
     }
 
+    //Exibe o chute dentro da Box
     function exibeChute(chute) {
         elementoChute.innerHTML = `
             <div>Você disse:</div>
@@ -61,5 +66,6 @@ function reconhecimentoVoz() {
         `
     }
 
+    //Ao final da fala recomeça o reconhecimento
     recognition.addEventListener('end', ()=> recognition.start())
 }

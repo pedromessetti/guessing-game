@@ -2,6 +2,7 @@ const menorValor = 1
 const maiorValor = 1000
 const numeroSecreto = gerarNumero()
 
+//Gera número aleatório entre o menor valor e o maior valor
 function gerarNumero() {
     return parseInt(Math.random()*maiorValor+1)
 }
