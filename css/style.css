@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+:root {
+    --main-font: 'Raleway', sans-serif;
+    --main-color: #EEF1FF; 
+    --bg-color: #002B5B;
+    --green: #00a000;
+    --red: #FF1E00;
+    --dark-shadow: #000000a2;
+    --blue-shadow: #256D85;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    font-family: var(--main-font);
+    background: var(--bg-color);
+    color: var(--main-color);
+}
+
+.title {
+    font-size: 5em;
+}
+
+.ganhou {
+    font-size: 4em;
+    font-weight: 700;
+    color: var(--green);
+    text-shadow:  1px 1px 5px var(--dark-shadow);
+}
+
+.game-over {
+    font-size: 5em;
+    font-weight: 700;
+    color: var(--red);
+    text-shadow: 1px 1px 5px var(--dark-shadow);
+}
+
+.menor-maior {
+    display: none;
+    margin-top: 1em;
+    font-size: 2em;
+}
+
+.sub-texto {
+    margin-top: 1em;
+    font-size: 2em;
+}
+
+.mensagem {
+    margin-top: 1.5em;
+    font-size: 1.5em;
+}
+
+.box {
+    display: inline-block;
+    font-size: 4em;
+    padding: .5em;
+    margin: .5em;
+    border: 3px solid var(--main-color);
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px var(--blue-shadow);
+    text-shadow:  2px 2px 5px var(--blue-shadow);
+}
+
+.erro {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--red);
+    text-shadow:  1px 1px 5px var(--dark-shadow);
+}
+
+.btn-reiniciar {
+    margin-top: 2em;
+    padding: 0.8em 1.5em;
+    font-size: 1.2em;
+    border: 0;
+    border-radius: 5px;
+    background: var(--main-color);
+    box-shadow: 3px 4px 8px var(--dark-shadow);
+}
+
+.tentativas {
+    padding: .5em;
+}
+
+#start {
+    display: block;
+}
+
+.legenda {
+    padding: 1em;
+    font-size: 2em;
+}
+
+.selecione {
+    padding: .5em 1em;
+    font-family: var(--main-font);
+    font-size: 2em;
+    border-radius: 10px;
+}
+
+.btn-comecar {
+    margin-top: 5em;
+    padding: 0.5em 2em;
+    font-size: 2em;
+    border: 0;
+    border-radius: 10px;
+    background: var(--main-color);
+    box-shadow: 3px 4px 8px var(--dark-shadow);
+}

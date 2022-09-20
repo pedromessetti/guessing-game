@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Adivinhação</title>
+    <link rel="icon" href="icon.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <h1 class="title">Adivinhe o número secreto</h1>
+
+    <h3 class="menor-maior">O número secreto está entre <span id="menor-valor"></span> e <span id="maior-valor"></span></h3>
+
+    <div id="start">
+        <fieldset class="dificuldade">
+            <legend class="legenda">Selecione o nível de dificuldade</legend>
+            <select class="selecione" id="nivel">
+                <option>Fácil</option>
+                <option>Médio</option>
+                <option>Difícil</option>
+            </select>
+        </fieldset>
+
+        <button id="comecar" class="btn-comecar">Começar</button>
+    </div>
+    
+    <div id="chute" class="mensagem"></div> 
+
+    <script src="app/start.js"></script>
+    <script src="app/sortearNumero.js"></script>
+    <script src="app/validacao.js"></script>
+
+</body>
+</html>
