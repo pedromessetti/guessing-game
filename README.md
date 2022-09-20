@@ -74,7 +74,11 @@ Caso seja um valor válido, o palpite será contabilizado. Se o palpite estiver 
 Ao finalizar suas tentativas aparecerá uma mensagem de "Game Over" e uma opção de jogar novamente. Em qualquer momento do jogo o player pode dizer "Game Over" e automaticamente o jogo encerra, dando a opção de ser reiniciado, caso não queira jogar novamente basta fecha-lo.
 
 ## Tecnologias Utilizadas
+<img src="img/html5.png" width=25px align="center"> **HTML 5**
 
+<img src="img/css3.png" width=25px align="center"> **CSS 3**
+
+<img src="img/js.png" width=25px align="center"> **Javascript**
 
 ## Autor
 | [<img src="img/eu.png" width=115><br><sub>Pedro Vinicius Messetti</sub>](https://github.com/pedromessetti) |
