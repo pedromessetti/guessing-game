@@ -115,7 +115,15 @@ body {
 }
 
 @media screen and (max-width:428px) {
+    body {
+        width: 100%;
+    }
+    
     .title {
         font-size: 4em;
+    }
+
+    .box {
+        font-size: 3em;
     }
 }
