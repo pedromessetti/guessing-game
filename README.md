@@ -43,11 +43,7 @@ Após baixar o arquivo _.zip_, descompacte-o e abra a pasta com o Visual Studio 
 ## :video_game: Como Jogar
 Ao iniciar o jogo terá de selecionar o nível de dificuldade e clique no botão "Jogar":
 
-* Fácil: 20 tentativas para acertar o número.
-
-* Médio: 15 tentativas para acertar o número.
-
-* Difícil: 10 tentativas para acertar o número.
+`Fácil: 20 tentativas` | `Médio: 15 tentativas` | `Difícil: 10 tentativas`
 
 :exclamation:Poderá personalizar o número de tentativas acessando o arquivo _start.js_ e altere através da função:
 ```
