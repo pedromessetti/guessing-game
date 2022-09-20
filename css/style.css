@@ -113,3 +113,10 @@ body {
     background: var(--main-color);
     box-shadow: 3px 4px 8px var(--dark-shadow);
 }
+
+@media screen and (max-width:428px) {
+    body {
+        width: 100%;
+        margin: .5em;
+    }
+}
